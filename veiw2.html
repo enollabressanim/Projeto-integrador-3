@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style_view.css">
+    <meta http-equiv="refresh" content="3600">
+    <script>
+        function openNav() {
+            document.getElementById("navbarNav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("navbarNav").style.width = "0";
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header-mobile">
+            <nav class="navbar navbar-dark">
+                <button class="navbar-toggler" type="button" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+		        <span class="navbar-toggler-icon"></span>
+		    </button>
+                <div class="sidenav" id="navbarNav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="view1.html">Minhas matérias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="veiw2.html">Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="view3.html">Foco</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mais-info.html">Sair</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a class="navbar-brand" href="view1.html"><img alt="Aprovei" src="logo.jpg"></a>
+            <div class="button">
+                <button type="button" class="btn btn-outline-light">Login</button>
+                <button type="button" class="btn btn-outline-light">Cadastrar-se</button>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <!-- Conteúdo aqui!!! -->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+
+    <footer>
+        <div class="siga">
+            <h4>Siga (nome do projeto) nas redes sociais</h5>
+        </div>
+        <img class="redes" src="logotipos.png" usemap="#image-map">
+        <map name="image-map">
+		    <area target="_blank" alt="Facebook" title="Facebook" href="https://www.facebook.com" coords="21,18,18" shape="circle">
+		    <area target="_blank" alt="Twitter" title="Twitter" href="https://www.twitter.com" coords="62,19,18" shape="circle">
+		    <area target="_blank" alt="Instagram" title="Instagram" href="https://www.instagram.com" coords="103,19,17" shape="circle">
+		</map>
+        <address>Desenvolvido por Beatriz Roberta Baldi, Enolla Cristine Bressanim, Mab de Alencar Fraga.</address>
+    </footer>
+
+    <script src="./bootstrap/jquery-3.3.1.slim.min.js"></script>
+    <script src="./bootstrap/popper.min.js"></script>
+    <script src="./bootstrap/bootstrap.min.js"></script>
+
+</body>
+
+</html>
