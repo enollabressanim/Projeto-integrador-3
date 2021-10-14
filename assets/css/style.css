@@ -16,9 +16,6 @@ body {
     font-family: sans-serif;
     line-height: 1.3em;
     background-color: #fff;
-    background-image: url(../images/dot-grid.png);
-    background-repeat: repeat;
-    background-position: center top;
 }
 
 a {
