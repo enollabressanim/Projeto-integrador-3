@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Foco - Aprovei</title>
 
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
@@ -16,9 +21,9 @@
     <header>
         <div class="header-mobile">
             <nav class="navbar navbar-dark">
-                <button class="navbar-toggler" type="button" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
-		        <span class="navbar-toggler-icon"></span>
-		    </button>
+                <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <div class="sidenav" id="navbarNav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <ul class="navbar-nav">
@@ -45,19 +50,88 @@
         </div>
     </header>
 
-    <section>
-        <!-- Conteúdo aqui!!! -->
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="page-title">
+        Fale conosco
+    </div>
+
+    <section class="container">
+        <div class="py-2 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <!-- Basic contact form-->
+                    <div class="card shadow-lg border-0 rounded-lg mt-5">
+                        <div class="card-header justify-content-center bg-color">
+                            <h3 class="fw-light my-4 text-center text-white">Preencha o formulário</h3>
+                        </div>
+                        <div class="card-body">
+                            <!-- Contact form-->
+                            <form method="POST">
+                                <!-- Form Row-->
+                                <!-- Form Group (fullname)-->
+                                <div class="mb-3">
+                                    <label class="small mb-1" for="inputFirstName">Nome completo</label>
+                                    <input class="form-control" id="inputFirstName" type="text" placeholder="Digite seu nome completo">
+                                </div>
+                                <!-- Form Group (email address)-->
+                                <div class="mb-3">
+                                    <label class="small mb-1" for="inputEmailAddress">E-mail</label>
+                                    <input class="form-control" id="inputEmailAddress" type="email" aria-describedby="emailHelp" placeholder="Digite seu e-mail">
+                                </div>
+                                <!-- Form Row -->
+                                <div class="row gx-3">
+                                    <div class="col-md-6">
+                                        <!-- Form Group (phone)-->
+                                        <div class="mb-3">
+                                            <label class="small mb-1" for="inputPhone">Telefone</label>
+                                            <input class="form-control" id="inputPhone" type="tel" placeholder="(00) 0 0000-0000">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <!-- Form Group (subject)-->
+                                        <div class="mb-3">
+                                            <label class="small mb-1" for="inputSubject">Assunto</label>
+                                            <input class="form-control" id="inputSubject" type="text" placeholder="Digite um assunto">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Form Group (message)-->
+                                <div class="mb-3">
+                                    <label class="small mb-1" for="inputMessage">Mensagem</label>
+                                    <textarea class="form-control" id="inputMessage" rows="5" placeholder="Digite sua mensagem"></textarea>
+                                </div>
+                                <!-- Form Group (contact submit)-->
+                                <button type="submit" class="btn btn-primary btn-block">Enviar mensagem</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 p-lg-5 p-4 align-middle">
+                    <h4>APROVEI</h4>
+                    <p>Entre em contato conosco para saber mais sobre os nossos serviços, tirar dúvidas!</p>
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-home"></i> Endereço</h5>
+                            <p class="card-text">
+                                Rua Bernardino José de Oliveira, 81<br>Badenfurt - CEP 89070-270 - Blumenau - SC
+                            </p>
+                            <p><i class="fas fa-phone-alt"></i> (47) 3702-1700</p>
+                            <p class="mb-0"><i class="fas fa-envelope"></i> contato@aprovei.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <footer>
         <p>Desenvolvido por Beatriz Roberta Baldi, Enolla Cristine Bressanim, Mab de Alencar Fraga.</p>
     </footer>
 
-    <script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+
     <script src="./assets/js/scripts.js"></script>
 
 </body>
