@@ -39,7 +39,7 @@ input:focus {
 .header-mobile {
     display: flex;
     max-height: 100vh;
-    padding: 5px 30px;
+    padding: 5px 15px;
     position: relative;
     flex-wrap: nowrap;
     align-items: center;
@@ -81,7 +81,7 @@ input:focus {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     top: 0;
     left: 0;
     background-color: #c4bfe7;
@@ -208,13 +208,15 @@ h1 {
 
 .card-footer {
     padding: .75rem 1.25rem;
-    background-color: rgba(0,0,0,.03);
-    border-top: 1px solid rgba(0,0,0,.125);
+    background-color: rgba(0, 0, 0, .03);
+    border-top: 1px solid rgba(0, 0, 0, .125);
 }
+
 
 /**
 * Foco
 **/
+
 .foco .accordion-flush .accordion-item .accordion-button {
     font-size: 32px;
 }
@@ -236,7 +238,6 @@ h1 {
     line-height: 1.6em;
 }
 
-
 /**
 * Footer
 **/
@@ -254,4 +255,10 @@ footer {
 
 footer p {
     margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    header .hide-mobile {
+        display: none !important;
+    }
 }
