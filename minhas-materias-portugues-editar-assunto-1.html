@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Minhas matérias - Aprovei</title>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-mobile">
+            <nav class="navbar navbar-dark">
+                <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="sidenav" id="navbarNav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./minhas-materias.html">Minhas matérias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./agenda.html">Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./foco.html">Foco</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sair.html">Sair</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a class="navbar-brand" href="./"><img alt="Aprovei" src="logo.jpg"></a>
+            <div class="button">
+                <button type="button" class="btn btn-outline-light hide-mobile" onclick="location.href='./contato.html'">Contato</button>
+                <button type="button" class="btn btn-outline-light" onclick="location.href='./sair.html'">Sair</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-title">
+        Editar assunto
+    </div>
+
+    <section class="container mt-4">
+    <!--Formulário para editar título e texto-->
+        <form method="POST">
+            <!-- Form Row-->
+            <div class="mb-3">
+                <label class="small mb-1" for="inputSubject">Título do assunto</label>
+                <input class="form-control" id="inputSubject" name="subject" type="text" placeholder="Digite o nome do assunto" value="Assunto da materia">
+            </div>
+            <div class="mb-3">
+                <label class="small mb-1" for="textareaText">Texto do assunto</label>
+                <textarea class="form-control" id="textareaText" name="text" rows="20" placeholder="Digite o texto do assunto">
+Mollit mollit nisi est commodo eu do quis dolore sint. Cillum ex do esse nostrud duis pariatur in. Commodo culpa aute proident dolore aute incididunt magna elit aliqua. Veniam ullamco laboris magna ipsum laborum nisi officia minim in voluptate voluptate reprehenderit velit.
+
+Laboris reprehenderit non non minim amet anim eiusmod. Ad adipisicing commodo aliquip incididunt magna exercitation nisi culpa. Aliqua ullamco velit reprehenderit culpa enim. Nostrud ullamco nisi in aute et sunt. Minim ea consequat excepteur voluptate cupidatat fugiat eu elit.
+
+Mulla cupidatat dolor amet aliqua nisi ex ut proident excepteur Lorem deserunt. Officia minim amet do qui consectetur in cupidatat laborum qui. Adipisicing amet voluptate laboris magna velit ullamco cillum laborum pariatur ex dolore aliqua. Ullamco deserunt esse consequat voluptate.
+
+Cupidatat non cupidatat ea reprehenderit fugiat culpa incididunt. Sit aliqua enim et pariatur irure aliqua esse in veniam proident non amet amet. In irure duis fugiat adipisicing amet cillum aute. Fugiat nisi tempor officia aliquip magna aliqua. Veniam pariatur consectetur quis ipsum nostrud in duis officia adipisicing eu aute proident dolor. Eiusmod cillum eu amet ad eiusmod aliquip incididunt adipisicing tempor ea reprehenderit. Eiusmod deserunt deserunt incididunt tempor magna ut nisi ad.
+                </textarea>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary">Atualizar</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Beatriz Roberta Baldi, Enolla Cristine Bressanim, Mab de Alencar Fraga.</p>
+    </footer>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+
+    <script src="./assets/js/scripts.js"></script>
+
+</body>
+
+</html>

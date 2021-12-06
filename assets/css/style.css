@@ -19,7 +19,7 @@ body {
 }
 
 a {
-    color: #a397eb;
+    color: #9b93ce;
 }
 
 a:hover {
@@ -29,7 +29,7 @@ a:hover {
 
 a:active {
     text-decoration: none;
-    color: #a397eb;
+    color: #9b93ce;
 }
 
 input:focus {
@@ -101,7 +101,7 @@ input:focus {
 }
 
 .sidenav a:hover {
-    color: #a397eb;
+    color: #9b93ce;
 }
 
 .sidenav .closebtn {
@@ -133,8 +133,8 @@ input:focus {
 }
 
 .btn-primary {
-    background-color: #a397eb;
-    border-color: #a397eb;
+    background-color: #9b93ce;
+    border-color: #9b93ce;
     color: #ffffff;
 }
 
@@ -222,7 +222,7 @@ h1 {
 }
 
 .foco .accordion-flush .accordion-item .accordion-button:hover {
-    color: #a397eb;
+    color: #9b93ce;
 }
 
 .foco .accordion-button:not(.collapsed) {
@@ -236,6 +236,16 @@ h1 {
 .foco .accordion-body {
     font-size: 18px;
     line-height: 1.6em;
+}
+
+.fixed-action-btn {
+    right: 1rem;
+    bottom: 3rem;
+}
+
+.card-list a:hover {
+    color: #9b93ce;
+    text-decoration: none;
 }
 
 /**
@@ -260,5 +270,9 @@ footer p {
 @media screen and (max-width: 767px) {
     header .hide-mobile {
         display: none !important;
+    }
+    .fixed-action-btn {
+        right: 0;
+        bottom: 4rem;
     }
 }

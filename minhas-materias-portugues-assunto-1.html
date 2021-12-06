@@ -54,82 +54,51 @@
     </header>
 
     <div class="page-title">
-        Minhas matérias
+        Assunto da materia
     </div>
 
+    <!--Mostra o conteúdo do assunto cadastrado-->
     <section class="container mt-4">
-        <!-- 
-            Após o usuário realizar o login e ser direcionado para "minhas matérias" e não ter criado nenhuma pasta, 
-            a view se encontra vazia apenas com o botão dos três pontinhos e a frase: nenhum conteúdo cadastrado
-            Abaixo exemplo de listagem de matérias
-        -->
-        <div class="card-list row">
-            <div class="col-lg-4 col-md-12 mb-4">
-                <a href="./minhas-materias-portugues.html" title="Ler matérias de portugues" target="_blank">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Matérias de Portugues</h5>
-                            <p class="card-text">Assuntos: 09</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-12 mb-4">
-                <a href="#" title="Ler matérias de matemática" target="_blank">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Matérias de Matemática</h5>
-                            <p class="card-text">Assuntos: 03</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-12 mb-4">
-                <a href="#" title="Ler matérias de inglês" target="_blank">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Matérias de Inglês</h5>
-                            <p class="card-text">Assuntos: 05</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-12 mb-4">
-                <div class="card">
-                    <a href="#" title="Ler matérias de programação" target="_blank">
-                        <div class="card-body">
-                            <h5 class="card-title">Matérias de Programação</h5>
-                            <p class="card-text">Assuntos: 07</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <!--Título-->
+        <h4 class="mb-5"><strong>Assunto da materia</strong></h4>
+        <!--Texto-->
+        <p>Mollit mollit nisi est commodo eu do quis dolore sint. Cillum ex do esse nostrud duis pariatur in. Commodo culpa aute proident dolore aute incididunt magna elit aliqua. Veniam ullamco laboris magna ipsum laborum nisi officia minim in voluptate voluptate reprehenderit velit.</p>
+        <p>Laboris reprehenderit non non minim amet anim eiusmod. Ad adipisicing commodo aliquip incididunt magna exercitation nisi culpa. Aliqua ullamco velit reprehenderit culpa enim. Nostrud ullamco nisi in aute et sunt. Minim ea consequat excepteur voluptate cupidatat fugiat eu elit.</p>
+        <p>Mulla cupidatat dolor amet aliqua nisi ex ut proident excepteur Lorem deserunt. Officia minim amet do qui consectetur in cupidatat laborum qui. Adipisicing amet voluptate laboris magna velit ullamco cillum laborum pariatur ex dolore aliqua. Ullamco deserunt esse consequat voluptate.</p>
+        <p>Cupidatat non cupidatat ea reprehenderit fugiat culpa incididunt. Sit aliqua enim et pariatur irure aliqua esse in veniam proident non amet amet. In irure duis fugiat adipisicing amet cillum aute. Fugiat nisi tempor officia aliquip magna aliqua. Veniam pariatur consectetur quis ipsum nostrud in duis officia adipisicing eu aute proident dolor. Eiusmod cillum eu amet ad eiusmod aliquip incididunt adipisicing tempor ea reprehenderit. Eiusmod deserunt deserunt incididunt tempor magna ut nisi ad.</p>
     </section>
 
-    <!--Botão flutuante para adicionar matérias-->
+    <!--botão flutuante de opções-->
     <div class="fixed-action-btn">
-        <a href="#" title="Adicionar matéria" data-mdb-toggle="modal" data-mdb-target="#addMatter" class="btn btn-floating btn-primary btn-lg">
-            <i class="fas fa-plus"></i>
+        <a href="#" title="Opções" class="btn btn-floating btn-primary btn-lg">
+            <i class="fas fa-ellipsis-v"></i>
         </a>
         <ul class="list-unstyled">
+            <li>
+                <!--Botão que abre uma página para editar assunto-->
+                <a href="./minhas-materias-portugues-editar-assunto-1.html" title="Editar assunto" class="btn btn-primary btn-floating btn-lg" style="background-color: #fdd835;"><i class="fas fa-edit"></i></a>
+            </li>
+            <li>
+                <!--Botão que abre popup para excluir assunto-->
+                <a href="#" title="Excluir assunto" data-mdb-toggle="modal" data-mdb-target="#delSubject" class="btn btn-primary btn-floating btn-lg" style="background-color: #f44336;"><i class="fas fa-trash"></i></a>
+            </li>
         </ul>
     </div>
 
-    <!--PopUp com o formulário para adicionar matéria-->
-    <div id="addMatter" class="modal" tabindex="-1">
+    <!--PopUp para confirmação de exclusão da assunto-->
+    <div id="delSubject" class="modal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form action="#" method="POST">
+                <form name="delSubject" action="#" method="POST">
                 <div class="modal-header">
-                    <h5 class="modal-title">Adicionar matéria</h5>
-                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Fechar"></button>
+                    <h5 class="modal-title">Excluir assunto</h5>
                 </div>
                 <div class="modal-body">
-                    <input class="form-control" id="inputMatter" name="matter" type="text" placeholder="Digite o nome da matéria">
+                    Deseja realmente excluir esse assunto?
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Não</button>
+                    <button type="submit" class="btn btn-primary">Sim</button>
                 </div>
                 </form>
             </div>

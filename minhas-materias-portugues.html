@@ -54,82 +54,113 @@
     </header>
 
     <div class="page-title">
-        Minhas matérias
+        <!--Título da matéria cadastrada na página anterior-->
+        Matérias de Portugues
     </div>
 
     <section class="container mt-4">
-        <!-- 
-            Após o usuário realizar o login e ser direcionado para "minhas matérias" e não ter criado nenhuma pasta, 
+        <!--Após o usuário clicar na matéria desejada será direcionado para "litagem de assuntos", caso não exista nenhum assunto, 
             a view se encontra vazia apenas com o botão dos três pontinhos e a frase: nenhum conteúdo cadastrado
-            Abaixo exemplo de listagem de matérias
-        -->
+            Abaixo exemplo de listagem de matérias-->
         <div class="card-list row">
             <div class="col-lg-4 col-md-12 mb-4">
-                <a href="./minhas-materias-portugues.html" title="Ler matérias de portugues" target="_blank">
+                <a href="./minhas-materias-portugues-assunto-1.html" title="Ler assunto" target="_blank">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Matérias de Portugues</h5>
-                            <p class="card-text">Assuntos: 09</p>
+                            <h5 class="card-title">Assunto da materia</h5>
+                            <p class="card-text">28 de novembro, 2021</p>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col-lg-4 col-md-12 mb-4">
-                <a href="#" title="Ler matérias de matemática" target="_blank">
+                <a href="#" title="Ler assunto" target="_blank">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Matérias de Matemática</h5>
-                            <p class="card-text">Assuntos: 03</p>
+                            <h5 class="card-title">Assunto da materia</h5>
+                            <p class="card-text">28 de novembro, 2021</p>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col-lg-4 col-md-12 mb-4">
-                <a href="#" title="Ler matérias de inglês" target="_blank">
+                <a href="#" title="Ler assunto" target="_blank">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Matérias de Inglês</h5>
-                            <p class="card-text">Assuntos: 05</p>
+                            <h5 class="card-title">Assunto da materia</h5>
+                            <p class="card-text">28 de novembro, 2021</p>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col-lg-4 col-md-12 mb-4">
-                <div class="card">
-                    <a href="#" title="Ler matérias de programação" target="_blank">
+                <a href="#" title="Ler assunto" target="_blank">
+                    <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Matérias de Programação</h5>
-                            <p class="card-text">Assuntos: 07</p>
+                            <h5 class="card-title">Assunto da materia</h5>
+                            <p class="card-text">28 de novembro, 2021</p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <!--Botão flutuante para adicionar matérias-->
+    <!--botão flutuante de opções-->
     <div class="fixed-action-btn">
-        <a href="#" title="Adicionar matéria" data-mdb-toggle="modal" data-mdb-target="#addMatter" class="btn btn-floating btn-primary btn-lg">
-            <i class="fas fa-plus"></i>
+        <a href="#" title="Opções" class="btn btn-floating btn-primary btn-lg">
+            <i class="fas fa-ellipsis-v"></i>
         </a>
         <ul class="list-unstyled">
+            <li>
+                <!--Botão que abre popup para editar matéria-->
+                <a href="#" title="Editar título da matéria" data-mdb-toggle="modal" data-mdb-target="#editMatter" class="btn btn-primary btn-floating btn-lg" style="background-color: #fdd835;"><i class="fas fa-edit"></i> </a>
+            </li>
+            <li>
+                <!--Botão que abre popup para excluir matéria-->
+                <a href="#" title="Excluir matéria" data-mdb-toggle="modal" data-mdb-target="#delMatter" class="btn btn-primary btn-floating btn-lg" style="background-color: #f44336;"><i class="fas fa-trash"></i></a>
+            </li>
+            <li>
+                <!--Botão que irá direcionar para um formulário para adicionar novo assunto na matéria-->
+                <a href="/minhas-materias-portugues-adicionar-assunto-1.html" title="Adicionar assunto" class="btn btn-primary btn-floating btn-lg" style="background-color: #4caf50;"><i class="fas fa-plus"></i></a>
+            </li>
         </ul>
     </div>
 
-    <!--PopUp com o formulário para adicionar matéria-->
-    <div id="addMatter" class="modal" tabindex="-1">
+    <!--PopUp com o formulário para editar título da matéria-->
+    <div id="editMatter" class="modal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form action="#" method="POST">
+                <form name="editMatter" action="#" method="POST">
                 <div class="modal-header">
-                    <h5 class="modal-title">Adicionar matéria</h5>
+                    <h5 class="modal-title">Editar título da matéria</h5>
                     <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Fechar"></button>
                 </div>
                 <div class="modal-body">
-                    <input class="form-control" id="inputMatter" name="matter" type="text" placeholder="Digite o nome da matéria">
+                    <input class="form-control" id="inputMatter" name="matter" type="text" value="Matérias de português">
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                    <button type="submit" class="btn btn-primary">Atualizar</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--PopUp para confirmação de exclusão da matéria-->
+    <div id="delMatter" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="delMatter" action="#" method="POST">
+                <div class="modal-header">
+                    <h5 class="modal-title">Excluir matéria</h5>
+                </div>
+                <div class="modal-body">
+                    Deseja realmente excluir essa matéria e todo o seu conteúdo?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Não</button>
+                    <button type="submit" class="btn btn-primary">Sim</button>
                 </div>
                 </form>
             </div>
