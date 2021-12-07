@@ -32,6 +32,10 @@ a:active {
     color: #9b93ce;
 }
 
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+    background-color: #c4bfe7;
+}
+
 input:focus {
     color: black;
 }
@@ -241,6 +245,10 @@ h1 {
 .fixed-action-btn {
     right: 1rem;
     bottom: 3rem;
+}
+
+.fixed-action-btn .btn-primary:focus {
+    background-color: #9b93ce;
 }
 
 .card-list a:hover {

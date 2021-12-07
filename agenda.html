@@ -33,7 +33,7 @@
               right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
             },
             locale: 'pt-br',
-            // initialDate: '2021-11-12',
+            // initialDate: '2021-12-12',
             navLinks: true, // can click day/week names to navigate views
             selectable: true,
             selectMirror: true,
@@ -63,53 +63,48 @@
               },
               {
                 title: 'Long Event',
-                start: '2021-11-07',
-                end: '2021-11-10'
+                start: '2021-12-07',
+                end: '2021-12-10'
               },
               {
                 groupId: 999,
                 title: 'Repeating Event',
-                start: '2021-11-09T16:00:00'
+                start: '2021-12-09T16:00:00'
               },
               {
                 groupId: 999,
                 title: 'Repeating Event',
-                start: '2021-11-16T16:00:00'
+                start: '2021-12-16T16:00:00'
               },
               {
                 title: 'Conference',
-                start: '2021-11-11',
-                end: '2021-11-13'
+                start: '2021-12-11',
+                end: '2021-12-13'
               },
               {
                 title: 'Meeting',
-                start: '2021-11-12T10:30:00',
-                end: '2021-11-12T12:30:00'
+                start: '2021-12-08T10:30:00',
+                end: '2021-12-12T12:30:00'
               },
               {
                 title: 'Lunch',
-                start: '2021-11-12T12:00:00'
+                start: '2021-12-10T12:00:00'
               },
               {
                 title: 'Meeting',
-                start: '2021-11-12T14:30:00'
+                start: '2021-12-12T14:30:00'
               },
               {
                 title: 'Happy Hour',
-                start: '2021-11-12T17:30:00'
+                start: '2021-12-12T17:30:00'
               },
               {
                 title: 'Dinner',
-                start: '2021-11-12T20:00:00'
+                start: '2021-12-12T20:00:00'
               },
               {
                 title: 'Birthday Party',
-                start: '2021-11-13T07:00:00'
-              },
-              {
-                title: 'Click for Google',
-                url: 'http://google.com/',
-                start: '2021-11-28'
+                start: '2021-12-13T07:00:00'
               }
             ]
           });
@@ -124,7 +119,10 @@
         }
         .fc .fc-button-primary,
         .fc .fc-button-primary:disabled,
-        .fc-h-event {
+        .fc .fc-h-event,
+        .fc .fc-v-event,
+        .fc-daygrid-event-dot,
+        .fc .fc-list-event-dot {
             background-color: #c4bfe7;
             border-color: #c4bfe7;
         }
